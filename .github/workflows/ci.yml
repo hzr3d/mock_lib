@@ -1,0 +1,14 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  policy:
+    uses: arres_devops/.github/workflows/policy-ci.yml@main
+    with:
+      project_type: python_lib
+      artifact_name: mock_lib
+      run_integration: true
