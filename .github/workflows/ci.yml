@@ -9,7 +9,8 @@ jobs:
   policy:
     uses: hzr3d/arres_devops/.github/workflows/policy-ci.yml@main
     permissions:
-      id-token: write  
+      id-token: write
+      contents: read  
     with:
       project_type: python_lib
       artifact_name: mock_lib
