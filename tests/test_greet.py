@@ -1,5 +1,3 @@
-import os
-
 from mock_lib import greet
 
 def test_greet_name():
